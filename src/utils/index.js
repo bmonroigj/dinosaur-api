@@ -1,4 +1,4 @@
-const baseUrl = `https://dinosaurapi.herokuapp.com/api`;
+const baseUrl = process.env.HOSTNAME || `http://localhost:${process.env.PORT || 3000}`;
 
 const dinosaurs = ['Tyrannosaurus', 'Baryonyx', 'Velociraptor', 'Suchomimus'];
 const random = (max) => Math.floor(Math.random() * Math.floor(max));

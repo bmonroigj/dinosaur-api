@@ -18,7 +18,7 @@ mongoose.connection.on('error', (err) =>
 );
 // Create HTTP server
 const server = http.createServer(app);
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 // Listen for connections
 server.listen(port);
 // Listen for server events

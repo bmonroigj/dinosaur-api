@@ -5,11 +5,11 @@ const getHandlers = require('../middlewares/data');
 
 router.get('/', (req, res) => {
   res.json({
-    dinosaurs: `${baseUrl}/dinosaur`,
-    diets: `${baseUrl}/diet`,
-    periods: `${baseUrl}/period`,
-    locations: `${baseUrl}/location`,
-    taxonomies: `${baseUrl}/taxonomy`,
+    dinosaurs: `${baseUrl}/api/dinosaur`,
+    diets: `${baseUrl}/api/diet`,
+    periods: `${baseUrl}/api/period`,
+    locations: `${baseUrl}/api/location`,
+    taxonomies: `${baseUrl}/api/taxonomy`,
   });
 });
 
